@@ -1,0 +1,8 @@
+<div class="container">
+ <app-cookpit (svCreated)="onAddServer($event)"
+ (bluePrintCreated)="onAddBlueprint($event)"></app-cookpit>
+  <hr>
+  <div class="row">
+    <app-server-element *ngFor="let element1 of serverElements" [element]="element1"></app-server-element>
+  </div>
+</div>
